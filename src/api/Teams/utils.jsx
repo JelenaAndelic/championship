@@ -5,7 +5,6 @@ export async function getTeamsPerYear() {
     const response =  await fetch("http://ergast.com/api/f1/2013/constructorStandings.json");
     const data = await response.json();
     return data;
-    // console.log(data);
   } catch (error) {
     console.log(error);
   }
